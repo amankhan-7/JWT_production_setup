@@ -8,28 +8,28 @@ This is a simple and clean JWT-based authentication API built with **Node.js**, 
 
 JWT_production_setup-root/
 │
-├── controllers/ # Business logic (register, login, user profile)
-│ ├── authController.js
-│ └── userController.js
+├── controllers/
+│   ├── authController.js       # Handles register and login logic
+│   └── userController.js       # Handles protected user routes like profile/dashboard
 │
-├── middleware/ # JWT auth middleware
-│ └── authMiddleware.js
+├── middleware/
+│   └── authMiddleware.js       # JWT token verification middleware
 │
-├── models/ # Mongoose user schema
-│ └── userModel.js
+├── models/
+│   └── userModel.js            # Mongoose schema for users
 │
-├── routes/ # API route definitions
-│ ├── authRoutes.js
-│ └── userRoutes.js
+├── routes/
+│   ├── authRoutes.js           # Defines /register and /login routes
+│   └── userRoutes.js           # Defines protected routes like /profile
 │
-├── config/ # MongoDB connection setup
-│ └── db.js
+├── config/
+│   └── db.js                   # MongoDB connection setup
 │
-├── .env # Secrets and environment variables
-├── .gitignore
-├── package.json
-├── index.js # Entry point
-└── README.md
+├── .env                        # Environment variables (e.g., JWT secret, DB URI, PORT)
+├── .gitignore                  # Ignore node_modules, .env, etc.
+├── package.json                # Project metadata and dependencies
+├── index.js                    # Entry point, sets up Express server and routes
+└── README.md                   # Project documentation
 
 ---
 
@@ -49,6 +49,6 @@ JWT_production_setup-root/
 1. **Clone the repository**
    ```bash
    git clone https://github.com/amankhan-7/JWT_production_setup.git
-
-Install dependencies
+   
+2. **Dependencies**
 npm install express mongoose dotenv bcryptjs jsonwebtoken
