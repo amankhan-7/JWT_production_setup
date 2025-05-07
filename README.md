@@ -51,4 +51,5 @@ JWT_production_setup-root/
    git clone https://github.com/amankhan-7/JWT_production_setup.git
    
 2. **Dependencies**
-npm install express mongoose dotenv bcryptjs jsonwebtoken
+ 
+   npm install express mongoose dotenv bcryptjs jsonwebtoken
